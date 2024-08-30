@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="#">
+            <select name="drink">
+                <optgroup label="Coffee">
+                    <option value="am">아메리카노</option>
+                    <option value="as">에스프레소</option>
+                    <option value="cl">카페라떼</option>
+                    <option value="cc">카푸치노</option>
+                    <option value="cb">콜드브루</option>
+                </optgroup>
+
+                <optgroup label="Non-Coffee">
+                    <option value="oj">오렌지 주스</option>
+                    <option value="gj">포도 주스</option>
+                    <option value="aj">사과 주스</option>
+                </optgroup>
+            </select>
+
+            <br><br><br>
+            <hr>
+            <input type="text" list="fruits">
+
+            <datalist id="fruits">
+                <option>사과</option>
+                <option>바나나</option>
+                <option>포도</option>
+                <option>오렌지</option>
+                <option>파인애플</option>
+            </datalist>
+
+            <input type="submit" value="주문하기" />
+        </form>
+    </body>
+</html>

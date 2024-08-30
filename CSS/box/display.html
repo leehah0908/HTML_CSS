@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            span {
+                display: block;
+                width: 100px;
+                height: 100px;
+                background: dodgerblue;
+            }
+
+            a {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+                background: orange;
+            }
+
+            .box {
+                height: 100px;
+                background: darkblue;
+                margin-top: 40px;
+            }
+
+            .hide {
+                /* 아예 요소가 사라지게 만듦 */
+                /* display: none; */
+                /* 투명도만 조절 */
+                opacity: 0.3;
+            }
+        </style>
+    </head>
+    <body>
+        <span>display 속성</span>
+
+        <a href="#">게시판</a>
+        <a href="#">방명록</a><br>
+
+        <button id="btn">click</button>
+
+        <div class="box">
+            <input type="text" value="1" />
+        </div>
+
+        <script>
+            const $box = document.querySelector(".box");
+            const $btn = document.getElementById("btn");
+
+            $btn.onclick = () => {
+                $box.classList.toggle("hide");
+            };
+        </script>
+    </body>
+</html>
