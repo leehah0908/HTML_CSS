@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .fruits > li:nth-child(3) {
+                color: orange;
+            }
+
+            .fruits > li:nth-child(5) {
+                color: yellow;
+            }
+
+            .fruits > li:nth-child(even) {
+                color: dodgerblue;
+            }
+
+            .fruits > li:nth-child(odd) {
+                color: green;
+            }
+
+            /* n 이라는 키워드 사용시 0부터 적용 */
+            .fruits > li:nth-child(3n + 1) {
+                color: pink;
+            }
+
+            /* .food라는 첫번째 자식이 p가 아니기 때문에 지목해서 스타일을 지정할 수 없습니다.
+            .food > p:nth-child(1) {
+                font-style: italic;
+                color: blue;
+            } */
+
+            /* 같은 종류의 요소 중 n번째 요소를 지목 */
+            .food > p:nth-of-type(1) {
+                font-style: italic;
+                color: blue;
+            }
+
+            .box-group > div > div:nth-of-type(1) {
+                font-weight: bold;
+                color: red;
+            }
+
+            .fruits > li:not(.pineapple) {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="fruits">
+            <li>딸기</li>
+            <li>사과</li>
+            <li>오렌지</li>
+            <li>포도</li>
+            <li class="pineapple">파인애플</li>
+            <li>복숭아</li>
+            <li>자두</li>
+        </ul>
+
+        <hr />
+
+        <div class="food">
+            <div>짜장면</div>
+            <p>짬뽕</p>
+            <p>탕수육</p>
+            <span>볶음밥</span>
+        </div>
+
+        <hr />
+
+        <div class="box-group">
+            <div>1</div>
+            <div>2</div>
+            <div>3
+                <div>3-1</div>
+                <div>3-2</div>
+                <div>3-3</div>
+            </div>
+        </div>
+    </body>
+</html>
