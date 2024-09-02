@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .container {
+                width: 400px;
+                height: 300px;
+                border: 4px dashed dodgerblue;
+                margin: 100px 0;
+            }
+
+            .box1 {
+                width: 150px;
+                height: 100px;
+                background: lightgray;
+                border: 4px dashed orange;
+
+                /* relative는 원래 내 위치를 기준으로 움직임 */
+                /* 원래 내 위치는 차지하고 있음 -> 다른 요소가 침범 X */
+                position: relative;
+                left: 300px;
+                bottom: 150px;
+            }
+
+            .box2 {
+                width: 150px;
+                height: 100px;
+                background: lightgray;
+                border: 4px dashed orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </body>
+</html>
