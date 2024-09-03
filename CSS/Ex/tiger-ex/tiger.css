@@ -1,0 +1,58 @@
+#wrapper {
+    width: 800px;
+    height: 500px;
+    padding: 50px;
+}
+
+#wrapper header h1 {
+    font-size: 20px;
+    background-color: #143654;
+    color: #ccca37;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+}
+
+#wrapper header h1 strong {
+    color: white;
+    font-size: 80px;
+}
+
+#wrapper header h1 span {
+    font-size: 50px;
+}
+
+#wrapper header h1 em {
+    color: #cccccc;
+    font-size: 60px;
+}
+
+#wrapper .container {
+    height: 100%;
+}
+
+#wrapper .container .menu {
+    background: #cccccc;
+    float: left;
+    height: 100%;
+    width: 130px;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+#wrapper .container .menu li {
+    margin-bottom: 10px;
+}
+
+#wrapper .container .menu li a {
+    color: gray;
+}
+
+#wrapper .container .content h2 {
+    background: #850106;
+    color: #f0ee44;
+    font-family: 궁서체;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
